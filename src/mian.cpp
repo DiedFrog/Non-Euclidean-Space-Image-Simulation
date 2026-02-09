@@ -613,7 +613,7 @@ int main()
         // 2. 渲染立方体
         for(int i=0;i<5;i++){
             // 立方体模型矩阵 - 旋转并放置在地面上方
-            cubeModel[i] = glm::scale(cubeModel[i],glm::vec3(1.0f,3.0f,1.0f));
+            cubeModel[i] = glm::scale(cubeModel[i],glm::vec3(1.0f,1.0f,1.0f));
             cubeModel[i] = glm::translate(cubeModel[i],glm::vec3(2.0f*cos(2*i*PI/5.0),0.0f,-2.0f*sin(2*i*PI/5.0)));
             cubeModel[i] = glm::rotate(cubeModel[i], time * glm::radians(50.0f), glm::vec3(0.0f, 1.0f, 0.0f));
             
